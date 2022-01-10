@@ -1,5 +1,9 @@
 # Meu novo portfólio
 
+[Visite a aplicação no netlify](https://stoic-jennings-b4ee1d.netlify.app)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6c603e37-1e5d-477c-96b0-3f20cad51126/deploy-status)](https://app.netlify.com/sites/stoic-jennings-b4ee1d/deploys)
+
 ## Conheça o desenvolvedor:
 
 | Conheça | Pelo Link |
