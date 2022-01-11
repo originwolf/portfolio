@@ -57,7 +57,7 @@ export default {
 </script>
 <style scoped>
 .navbar {
-  background-color: rgba(39, 64, 139, 0.8);
+  background-color: #0F1C47;
 }
 
 .nav-link {
