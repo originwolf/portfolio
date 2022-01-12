@@ -55,44 +55,46 @@ export default {
   props: ['links', 'link-dropdown'],
 };
 </script>
-<style scoped>
+<style scoped lang="scss">
+@import '@/styles/variables.scss';
+
 .navbar {
-  background-color: #0F1C47;
+  background-color: $-main-dark-heavyer-blue;
 }
 
 .nav-link {
-  color: #fff;
+  color: $-true-white;
   font-size: 1.3rem;
 }
 
 .nav-link:hover {
-  color: #aaa;
+  color: $-main-dark-light-gray;
 }
 
 .btnMenu {
   background-color: transparent;
-  color: white;
+  color: $-true-white;
   font-size: 1.3rem;
 }
 
 .btnMenu:hover {
-  color: #aaa;
+  color: $-main-dark-light-gray;
 }
 
 .dropdown-menu {
-  background-color: #25221a;
+  background-color: $-main-dark-heavyer-gray;
 }
 
 .dropdown-item {
-  color: white;
+  color: $-true-white;
 }
 
 .dropdown-item:hover {
-  color: #25221a;
+  color: $-main-dark-heavyer-gray;
 }
 
 .dropdown-item:focus {
-  color: #25221a;
+  color: $-main-dark-heavyer-gray;
 }
 
 .btn-fas:focus {
@@ -103,14 +105,14 @@ export default {
 .fa-lightbulb,
 .fa-bars {
   font-size: 2rem;
-  color: #cecece;
-  transition: 0.5s;
+  color: $-true-white;
+  transition: 0.3s;
 }
 
 .fa-envelope:hover,
 .fa-lightbulb:hover,
 .fa-bars:hover {
-  color: #aaa;
-  transition: 0.5s;
+  color: $-main-dark-medium-gray;
+  transition: 0.3s;
 }
 </style>

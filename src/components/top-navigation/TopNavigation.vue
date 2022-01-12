@@ -48,37 +48,39 @@
   </header>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@import '@/styles/variables.scss';
+
 .top-navigation {
-  background-color: #272727;
-  color: #cecece;
+  background-color: $-main-dark-heavy-gray;
+  color: $-main-dark-light-gray;
   line-height: 200%;
   height: 35px;
 }
 
 .top-navigation a,
 .textBranco {
-  color: #cecece;
+  color: $-main-dark-light-gray;
 }
 
 .link {
   text-decoration: underline;
-  color: #cecece;
+  color: $-main-dark-light-gray;
 }
 
 .linkNoUnderline {
   text-decoration: none;
-  color: #cecece;
+  color: $-main-dark-light-gray;
 }
 
 .link:hover,
 .linkNoUnderline:hover {
   text-decoration: none;
-  color: #cecece;
+  color: $-main-dark-light-gray;
   font-size: 1.1rem;
 }
 
 .top-navigation a:hover {
-  color: #fff;
+  color: $-true-white;
 }
 </style>
