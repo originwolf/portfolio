@@ -6,8 +6,7 @@
       :link-dropdown="linkDropdown"
     ></the-header>
     <banner></banner>
-    <about></about>
-    <data-skill></data-skill> -->
+    <about></about> -->
   </div>
 </template>
 

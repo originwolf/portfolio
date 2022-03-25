@@ -5,7 +5,6 @@ import TopNavigation from './components/top-navigation/TopNavigation.vue';
 import TheHeader from './components/header/TheHeader';
 import Banner from './components/banner/Banner.vue';
 import About from './components/about/About.vue';
-import DataSkill from './components/data-skill/DataSkill.vue';
 import './styles/main.scss';
 
 const app = createApp(App);
@@ -14,6 +13,5 @@ app.component('top-navigation', TopNavigation);
 app.component('the-header', TheHeader);
 app.component('banner', Banner);
 app.component('about', About);
-app.component('data-skill', DataSkill);
 
 app.mount('#app');
