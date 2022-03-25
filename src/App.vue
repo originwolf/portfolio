@@ -5,8 +5,8 @@
       :links="links"
       :link-dropdown="linkDropdown"
     ></the-header>
-    <!-- <banner></banner>
-    <about></about> -->
+    <banner></banner>
+    <!-- <about></about> -->
   </div>
 </template>
 
