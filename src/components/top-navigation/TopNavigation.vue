@@ -45,8 +45,12 @@ div(class='top-navigation')
 }
 
 .social span,
-.my-name,
-.fa-code {
+.my-name{
   color: $-main-dark-light-gray;
+}
+
+.social span:hover,
+.my-name:hover {
+  color: $-main-dark-ultra-light-gray;
 }
 </style>

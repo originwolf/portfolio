@@ -1,11 +1,11 @@
 <template>
   <div>
     <top-navigation></top-navigation>
-    <!-- <the-header
+    <the-header
       :links="links"
       :link-dropdown="linkDropdown"
     ></the-header>
-    <banner></banner>
+    <!-- <banner></banner>
     <about></about> -->
   </div>
 </template>
@@ -16,20 +16,14 @@ export default {
     return {
       links: [
         {
-          name: "Sobre mim eu",
-          locale: "http://facebook.com.br",
-        },
-      ],
-      linkDropdown: [
-        {
-          name: "Projetos 1",
+          name: "Facebook",
           locale: "http://facebook.com.br",
         },
         {
-          name: "Projetos 2",
-          locale: "http://facebook.com.br",
-        },
-      ],
+          name: "GitHub",
+          locale: "https://github.com/originwolf",
+        }
+      ]
     };
   },
 };
