@@ -1,12 +1,13 @@
 <template>
   <div>
     <top-navigation></top-navigation>
-    <the-header
+    <!-- <the-header
       :links="links"
       :link-dropdown="linkDropdown"
     ></the-header>
     <banner></banner>
     <about></about>
+    <data-skill></data-skill> -->
   </div>
 </template>
 
