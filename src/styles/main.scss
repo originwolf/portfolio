@@ -3,3 +3,16 @@
 .pull-right {
   float: right;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $-main-dark-ultra-light-gray;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $-main-dark-medium-light-blue;
+  border-radius: 10px;
+}
