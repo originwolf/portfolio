@@ -3,14 +3,14 @@
   TopNavigation
   TheHeader(:links="links")
   Banner
-  About
+  Presentation
 </template>
 
 <script>
 import TopNavigation from './components/top-navigation/TopNavigation.vue';
 import TheHeader from './components/header/TheHeader';
 import Banner from './components/banner/Banner.vue';
-import About from './components/about/About.vue';
+import Presentation from './components/presentation/Presentation.vue';
 
 export default {
   name: 'app',
@@ -18,7 +18,7 @@ export default {
     TopNavigation,
     TheHeader,
     Banner,
-    About
+    Presentation
   },
   data() {
     return {

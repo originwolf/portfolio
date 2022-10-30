@@ -1,22 +1,23 @@
 <template lang='pug'>
 .navbar
-  el-menu.navbar-nav(
-    :default-active="activeIndex",
-    mode="horizontal",
-    :ellipsis="false"
-  )
-    el-menu-item(
-      v-if='links',
-      v-for="(link, index) in links",
-      :key="index"
+  el-header
+    el-menu.navbar-nav(
+      :default-active="activeIndex",
+      mode="horizontal",
+      :ellipsis="false"
     )
-      a(:href='link.locale') {{link.name}}
-    .flex-grow
-    .buttons
-      el-button(@click='contact')
-        span.fas.fa-envelope
-      el-button(@click='contact')
-        span.fas.fa-lightbulb
+      el-menu-item(
+        v-if='links',
+        v-for="(link, index) in links",
+        :key="index"
+      )
+        a(:href='link.locale') {{link.name}}
+      .flex-grow
+      .buttons
+        el-button(@click='contact')
+          span.fas.fa-envelope
+        el-button(@click='contact')
+          span.fas.fa-lightbulb
 </template>
 <script>
 export default {
