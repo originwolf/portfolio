@@ -11,7 +11,7 @@
         v-for="(link, index) in links",
         :key="index"
       )
-        a(:href='link.locale') {{link.name}}
+        a(:href='link.locale', target="_blank") {{link.name}}
       .flex-grow
       .buttons
         el-button(@click='contact')
