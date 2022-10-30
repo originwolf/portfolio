@@ -1,17 +1,25 @@
-<template>
-  <div>
-    <top-navigation></top-navigation>
-    <the-header
-      :links="links"
-      :link-dropdown="linkDropdown"
-    ></the-header>
-    <banner></banner>
-    <!-- <about></about> -->
-  </div>
+<template lang="pug">
+#app
+  TopNavigation
+  TheHeader(:links="links", :link-dropdown="linkDropdown")
+  Banner
+  About
 </template>
 
 <script>
+import TopNavigation from './components/top-navigation/TopNavigation.vue';
+import TheHeader from './components/header/TheHeader';
+import Banner from './components/banner/Banner.vue';
+import About from './components/about/About.vue';
+
 export default {
+  name: 'app',
+  components: {
+    TopNavigation,
+    TheHeader,
+    Banner,
+    About
+  },
   data() {
     return {
       links: [
