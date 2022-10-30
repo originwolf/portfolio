@@ -16,8 +16,8 @@ export default {
     return {
       links: [
         {
-          name: "Facebook",
-          locale: "http://facebook.com.br",
+          name: "Portfólio",
+          locale: "https://pedromartins.dev/",
         },
         {
           name: "GitHub",
