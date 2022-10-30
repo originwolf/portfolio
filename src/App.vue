@@ -1,7 +1,7 @@
 <template lang="pug">
 #app
   TopNavigation
-  TheHeader(:links="links", :link-dropdown="linkDropdown")
+  TheHeader(:links="links")
   Banner
   About
 </template>

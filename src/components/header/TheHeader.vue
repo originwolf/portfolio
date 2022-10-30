@@ -1,19 +1,22 @@
 <template lang='pug'>
 .navbar
-  el-menu.navbar__menu-row(:default-active="activeIndex", mode="horizontal", @select="handleSelect")
-    el-menu-item.navbar__menu-row__menu-item(
+  el-menu.navbar-nav(
+    :default-active="activeIndex",
+    mode="horizontal",
+    :ellipsis="false"
+  )
+    el-menu-item(
       v-if='links',
       v-for="(link, index) in links",
-      :key="link.name",
-      :index='1'
-      disabled
+      :key="index"
     )
-      a.navbar__link(:href='link.locale') {{link.name}}
-  .pull-right
-    el-button(@click='contact')
-      span.fas.fa-envelope
-    el-button(@click='contact')
-      span.fas.fa-lightbulb
+      a(:href='link.locale') {{link.name}}
+    .flex-grow
+    .buttons
+      el-button(@click='contact')
+        span.fas.fa-envelope
+      el-button(@click='contact')
+        span.fas.fa-lightbulb
 </template>
 <script>
 export default {
@@ -34,15 +37,34 @@ export default {
   background-color: $-main-dark-heavyer-blue;
 }
 
-.navbar__link{
-  padding: 16px;
-  font-size: 1.2rem;
-  text-decoration: none;
-  color: $-main-dark-light-gray;
+.el-menu {
+  background-color: $-main-dark-heavyer-blue;
+  border-bottom: none;
 }
 
-.navbar__link:hover {
-  color: $-main-dark-ultra-light-gray;
+.navbar-nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: $-main-dark-light-gray;
+  &:hover {
+    color: $-main-dark-ultra-light-gray;
+  }
+}
+
+.el-menu-item:hover {
+  border-radius: 5px;
+  background-color: $-main-dark-medium-light-blue!important;
+}
+
+.el-button {
+  background-color: $-main-dark-medium-light-blue;
+  border: none;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .fas {
@@ -50,6 +72,12 @@ export default {
   font-size: 1.5rem;
   line-height: 0;
   color: $-main-dark-light-gray;
+  &:hover {
+    color: $-main-dark-ultra-light-gray;
+  }
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
 </style>
